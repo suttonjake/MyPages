@@ -1,25 +1,95 @@
-<!-- News Resources Content -->
-<h4>&lt;My Daily News&gt;</h4>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-<ul class="lists">
+    <title>MyPages - News</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/content.css">
 
-    <H5>&lt;Top News Sites&gt;</h5>
-    <ul class="links">
-        <a href="">News Link</a>
-    </ul>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-</ul>
+    <script type="text/javascript">
+        $(function(){
+            $("#header").load("include/header.html");
+        });
+    </script>
 
-<!-- Main list of news links sorted by category -->
-<ul class="lists">
+</head>
 
-    <h5>Alternative News</h5>
-    <ul class="links">
-        <a href="">News Link</a>
-    </ul>
+<body>
 
-    <h5>Mainstream News</h5>
+    <!-- Centered Content Wrapper -->
+    <div id="page-wrapper">
 
-    <h5>Tech News</h5>
+        <header id="header"></header>
 
-</ul>
+        <main id="main">
+
+            <hr />
+
+            <nav class="nav-content-top">
+                <h4>&lt;My Daily News&gt;</h4>
+            </nav>
+
+            <hr />
+
+            <div class="content">
+
+                <!-- Top News Links Here -->
+                <ul class="links-wrapper">
+                    <h5>&lt;Top News Sites&gt;</h5>
+                    <ul class="links">
+                        <a href="">News Links</a>
+                    </ul>
+                </ul>
+
+                <!-- Main list of news links sorted by category -->
+                <ul class="links-wrapper">
+                    <h5>&lt;Alternative News&gt;</h5>
+                    <ul class="links">
+                        <a href="">News Links</a>
+                    </ul>
+                </ul>
+
+                <ul class="links-wrapper">
+                    <h5>&lt;Mainstream News&gt;</h5>
+                    <ul class="links">
+                        <a href="">News Link</a>
+                    </ul>
+                </ul>
+
+                <ul class="links-wrapper">
+                    <h5>&lt;Technology News&gt;</h5>
+                    <ul class="links">
+                        <a href="">News Link</a>
+                    </ul>
+                </ul>
+
+                <ul class="links-wrapper">
+                    <h5>&lt;Security News&gt;</h5>
+                    <ul class="links">
+                        <a href="">News Link</a>
+                    </ul>
+                </ul>
+
+                <ul class="links-wrapper">
+                    <h5>&lt;Business News&gt;</h5>
+                    <ul class="links">
+                        <a href="">News Link</a>
+                        <a href="https://www.inc.com/">Inc</a>
+                    </ul>
+                </ul>
+
+            </div>
+
+        </main>
+
+        <footer id="footer"></footer>
+
+    </div>
+
+</body>
+</html>

@@ -3,53 +3,42 @@
 <head>
 
     <title>MyPages</title>
-    <link rel="stylesheet" href="CSS/base.css">
-    <link rel="stylesheet" href="CSS/pages.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/content.css">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <script type="text/javascript">
+        $(function(){
+            $("#header").load("include/header.html");
+        });
+    </script>
+
 </head>
 
 <body>
 
     <!-- Centered Wrapper -->
-    <div id="content-wrapper">
+    <div id="page-wrapper">
 
-        <header>
-            <h1><a href="">MyPages</a></h1>
+        <header id="header"></header>
 
-            <nav>
-                <li>
-                    <a href="" onclick="">Profile</a>
-                </li>
-                <li>
-                    <a href="" onclick="">Resume</a>
-                </li>
-                <li>
-                    <a href="" onclick='$("#content").load("news.html");
-                                                return false;'>News</a>
-                </li>
-                <li>
-                    <a href="" onclick='$("#content").load("edu.html");
-                                                return false;'>Education</a>
-                </li>
-                <li>
-                    <a href="" onclick="">Organizer</a>
-                </li>
-                <li>
-                    <a href="" onclick="">Other</a>
-                </li>
-            </nav>
-        </header>
-
-        <main id="content">
+        <main id="main">
 
             <h4>Landing Page</h4>
 
+            <h5>&lt;Quick Links&gt;</h5>
+            <h5>&lt;Top Stories&gt;</h5>
+            <h5>&lt;Etc...&gt;</h5>
+
         </main>
+
+        <footer>
+            <p>&lt;Footer&gt;</p>
+        </footer>
 
     </div>
 
