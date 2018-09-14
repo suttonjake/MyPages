@@ -1,0 +1,72 @@
+html,
+body,
+header, main, nav, footer, div, p, a,
+h1, h2, h3, h4, h5, h6,
+ul, ol, li,
+hr, br {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#333333;
+    color: #e2e2e2;
+}
+
+header {
+    background-color:#000;
+}
+
+header h1 {
+    padding:15px;
+}
+
+.nav {
+    background-color:#222222;
+}
+
+.dropbtn, .nav a {
+    background-color: #222222;
+    color: #e2e2e2;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+}
+
+.nav a {
+    text-decoration:none;
+}
+
+.dropdown, .nav a {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #e2e2e2;
+    padding: 12px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #e2e2e2; color: #333333}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: grey;}
+
+h2 {
+    margin: 15px;
+}
+
+.tradingview-widget-container {
+    float: left;
+    margin: 15px;
+}

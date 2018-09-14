@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Tracker</title>
+
+    <link rel="stylesheet" type="text/css" href="../styles/base.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Stock-Tracker</h1>
+    </header>
+
+    <hr>
+    <!-- Nav BEGIN -->
+    <div class="nav">
+        <a href="../index.html">Overview</a>
+        <div class="dropdown">
+            <button class="dropbtn">Markets</button>
+            <div class="dropdown-content">
+                <a href="./usa.html">USA: NASDAQ, NYSE, NYSE ARCA, OTC</a>
+                <a href="./canada.html">Canada: TSX, TSXV</a>
+                <a href="./germany.html">Germany: FWB, SWB, XETR</a>
+                <a href="./india.html">India: BSE, NSE</a>
+                <a href="./italy.html">Italy: MIL, MILSEDEX</a>
+                <a href="./tur.html">Turkey: BIST</a>
+                <a href="./uk.html">UK: LSE, LSIN</a>
+                <a href="./forex.html">FOREX</a>
+            </div>
+        </div>
+        <a href="../marijuana.html">Marijuana</a>
+        <a href="../crypto.html">Cryptocurrency</a>
+    </div>
+    <!-- Nav END -->
+    <hr>
+
+    <h2>UK: LSE, LSIN</h2>
+
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/screener/" rel="noopener" target="_blank"><span class="blue-text">Stock Screener</span></a> by TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+        {
+            "width": "1200",
+            "height": "600",
+            "defaultColumn": "overview",
+            "defaultScreen": "top_gainers",
+            "market": "uk",
+            "showToolbar": true,
+            "locale": "en"
+        }
+        </script>
+    </div>
+    <!-- TradingView Widget END -->
+</body>
+
+</html>
